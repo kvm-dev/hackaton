@@ -1,4 +1,4 @@
-package com.colorgame.model.currentLevel
+package com.colorgame.model.level.currentLevel
 
 data class Stats(
     val commandCount: Int,
