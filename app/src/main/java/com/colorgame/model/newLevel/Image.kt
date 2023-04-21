@@ -1,4 +1,4 @@
-package com.example.adhipradanatest.hakaton.level
+package com.colorgame.model.newLevel
 
 data class Image(
     val grade: Int,

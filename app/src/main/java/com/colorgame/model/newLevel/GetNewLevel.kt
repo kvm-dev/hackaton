@@ -1,8 +1,8 @@
-package com.example.adhipradanatest.hakaton.level
+package com.colorgame.model.newLevel
 
 data class GetNewLevel (
     val info: LevelInfo,
     val status: Int,
     val success: Boolean,
-    val response: LevelResponse
+    val response: GetLevelResponse
 )

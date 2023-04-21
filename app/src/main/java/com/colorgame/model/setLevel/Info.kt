@@ -1,7 +1,6 @@
-package com.example.adhipradanatest.hakaton.level
+package com.colorgame.model.setLevel
 
-
-data class LevelInfo(
+data class Info(
     val c: Int,
     val m: Int,
     val ns: Int,
