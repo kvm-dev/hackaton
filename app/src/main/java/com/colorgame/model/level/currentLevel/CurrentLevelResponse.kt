@@ -1,6 +1,6 @@
-package com.colorgame.model.currentLevel
+package com.colorgame.model.level.currentLevel
 
-import com.colorgame.model.setLevel.Info
+import com.colorgame.model.level.setLevel.Info
 
 data class CurrentLevelResponse(
     val info: Info,

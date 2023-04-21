@@ -1,4 +1,4 @@
-package com.colorgame.model.newLevel
+package com.colorgame.model.level.newLevel
 
 data class Image(
     val grade: Int,

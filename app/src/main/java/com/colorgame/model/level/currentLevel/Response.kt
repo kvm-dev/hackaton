@@ -1,7 +1,7 @@
-package com.colorgame.model.currentLevel
+package com.colorgame.model.level.currentLevel
 
-import com.colorgame.model.newLevel.Image
-import com.colorgame.model.newLevel.Stage
+import com.colorgame.model.level.newLevel.Image
+import com.colorgame.model.level.newLevel.Stage
 
 data class Response(
     val canvas: Canvas,

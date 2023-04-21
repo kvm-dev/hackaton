@@ -1,6 +1,7 @@
-package com.colorgame.model.setLevel
+package com.colorgame.model.level.newLevel
 
-data class Info(
+
+data class LevelInfo(
     val c: Int,
     val m: Int,
     val ns: Int,
