@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         val newImageBitmap = colorRecognition.recognizeImage()
 
         binding.firstImage.setImageBitmap(newImageBitmap)
-
+//
 
 
     }
