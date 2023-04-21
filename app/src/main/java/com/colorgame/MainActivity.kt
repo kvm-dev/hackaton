@@ -68,14 +68,6 @@ class MainActivity : AppCompatActivity() {
 
     private fun pixel() {
         val bitmap = BitmapFactory.decodeResource(resources, R.drawable.image3)
-        val newImage = Bitmap.createBitmap(bitmap.width, bitmap.height, Bitmap.Config.ARGB_8888)
-        val canvas = Canvas(newImage)
-        canvas.drawBitmap(bitmap, 0f, 0f, null)
-        val paint = Paint().apply {
-            isAntiAlias = true
-            style = Paint.Style.FILL
-        }
-
         val mutableBitmap: Bitmap = bitmap.copy(Bitmap.Config.ALPHA_8, true)
        mutableBitmap.width = 255
         mutableBitmap.height = 255
@@ -89,8 +81,7 @@ class MainActivity : AppCompatActivity() {
 
                 Log.d("ColorRecognition", "Pixel color at ($x, $y): $red, $green, $blue")
                 pixels.add(Pixel(x, y, red, green, blue))
-                paint.color = pixelColor
-                canvas.drawRect(Rect(x, y, x+1, y+1), paint)
+
             }
         }
 
