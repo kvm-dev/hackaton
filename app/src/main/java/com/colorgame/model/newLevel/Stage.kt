@@ -1,7 +1,5 @@
-package com.example.adhipradanatest.hakaton.level
+package com.colorgame.model.newLevel
 
-
-import com.google.gson.annotations.SerializedName
 
 data class Stage(
     val description: String,
