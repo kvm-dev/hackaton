@@ -6,7 +6,9 @@ plugins {
 android {
     namespace 'com.colorgame'
     compileSdk 33
-
+    buildFeatures{
+        viewBinding true
+    }
     defaultConfig {
         applicationId "com.colorgame"
         minSdk 26
