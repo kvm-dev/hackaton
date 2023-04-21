@@ -1,5 +1,5 @@
 package com.colorgame.model.setLevel
 
-data class Response(
+data class QueueResponse(
     val queue: Queue
 )
