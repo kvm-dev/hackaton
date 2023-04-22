@@ -1,6 +1,5 @@
 package com.colorgame.model.level.newLevel
 
-
 data class Stage(
     val description: String,
     val id: Int,
