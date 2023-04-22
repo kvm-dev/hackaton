@@ -8,20 +8,20 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 
 class MainActivity : AppCompatActivity() {
-    val viewModel by lazy { ViewModelProvider(this)[MainViewModel::class.java]}
+    val viewModel by lazy { ViewModelProvider(this)[MainViewModel::class.java] }
 
-        override fun onCreate(savedInstanceState: Bundle?) {
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-            val test = findViewById<TextView>(R.id.textView)
-            test.setOnClickListener {
-                viewModel.getLevel()
-            }
-            viewModel.result.observe(this) {
-                if (it != null) {
-                    Log.d("ответ", "${it.success}")
-                }
+        val test = findViewById<TextView>(R.id.textView)
+        test.setOnClickListener {
+            viewModel.getLevel()
+        }
+        viewModel.result.observe(this) {
+            if (it != null) {
+                Log.d("ответ", "${it.success}")
             }
         }
+    }
 
 }

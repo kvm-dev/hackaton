@@ -1,11 +1,11 @@
 package com.colorgame.model.other
 
-import com.colorgame.model.level.currentLevel.Response
+import com.colorgame.model.level.currentLevel.ApiResponse
 import com.colorgame.model.level.setLevel.Info
 
 data class Shot(
     val info: Info,
-    val response: Response,
+    val apiResponse: ApiResponse,
     val status: Int,
     val success: Boolean
 )

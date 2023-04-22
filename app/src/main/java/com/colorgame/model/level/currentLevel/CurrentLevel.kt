@@ -2,9 +2,9 @@ package com.colorgame.model.level.currentLevel
 
 import com.colorgame.model.level.setLevel.Info
 
-data class CurrentLevelResponse(
+data class CurrentLevel(
     val info: Info,
-    val response: Response,
+    val apiResponse: ApiResponse,
     val status: Int,
     val success: Boolean
 )
