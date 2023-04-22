@@ -14,7 +14,7 @@ class TokenInterceptor : Interceptor {
 
         //rewrite the request to add bearer token
         val newRequest: Request = chain.request().newBuilder()
-            .header("Authorization", "64343ea1293fa64343ea1293fd")
+            .header("Authorization", "Bearer 64343ea1293fa64343ea1293fd")
             .build()
         return chain.proceed(newRequest)
     }

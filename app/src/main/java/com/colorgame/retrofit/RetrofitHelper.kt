@@ -14,13 +14,13 @@ object RetrofitHelper {
         .addInterceptor(interceptor)
         .build()
 
-        private const val BASE_URL ="http://api.datsart.dats.team/"
-        private val moshi = Moshi.Builder().addLast(KotlinJsonAdapterFactory()).build()
-        fun getInstance(): Retrofit {
-            return Retrofit.Builder()
-                .client(client)
-                .baseUrl(BASE_URL)
-                .addConverterFactory(MoshiConverterFactory.create(moshi))
-                .build()
-        }
+    private const val BASE_URL = "http://api.datsart.dats.team/"
+    private val moshi = Moshi.Builder().addLast(KotlinJsonAdapterFactory()).build()
+    fun getInstance(): Retrofit {
+        return Retrofit.Builder()
+            .baseUrl(BASE_URL)
+            .addConverterFactory(MoshiConverterFactory.create(moshi))
+            .client(client)
+            .build()
     }
+}
